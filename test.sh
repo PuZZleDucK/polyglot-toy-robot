@@ -4,12 +4,13 @@ set -o errexit
 export program_name="./robot.sh"
 test_files=$(ls data/)
 for file in data/*; do
-  if [[ $file == "data/"* ]]; then # limit to tests
+  if [[ $file == "data/"* ]]; then
+    output=$($program_name $file)
     expected_output=$(tail -1 $file)
-    if [[ $expected_output == "Expected output:" ]]; then # expect blank output
+    if [[ $expected_output == "Expected output:" ]]; then
+      # There was no output to find, expect blank output
       expected_output=""
     fi
-    output=$($program_name $file)
     if [[ "$output" == "$expected_output" ]]; then
       echo -e "$file - \e[32mpass\e[0m"
     else

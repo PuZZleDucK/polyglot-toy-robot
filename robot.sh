@@ -5,12 +5,9 @@ if [ ! -f "$1" ]; then
 fi
 
 function place_robot {
-  # echo $1
-  # echo $2
-  # echo $3
   true
-  if (( $1 >= 0 && $1 < 5 )) ; then
-    if (( $1 >= 0 && $1 < 5 )) ; then
+  if (( $1 >= 0 && $1 < 5 )); then
+    if (( $1 >= 0 && $1 < 5 )); then
       x=$1
       y=$2
       f=$3
@@ -26,22 +23,22 @@ function report {
 function move_robot {
   case $f in
     "NORTH")
-      if (( $y < 5 )) ; then
+      if (( $y < 5 )); then
         y=$((y + 1))
       fi
     ;;
     "SOUTH")
-      if (( $y > 1 )) ; then
+      if (( $y > 1 )); then
         y=$((y - 1))
       fi
     ;;
     "EAST")
-      if (( $x < 5 )) ; then
+      if (( $x < 5 )); then
         x=$((x + 1))
       fi
     ;;
     "WEST")
-      if (( $x > 1 )) ; then
+      if (( $x > 1 )); then
         x=$((x - 1))
       fi
     ;;
@@ -83,7 +80,7 @@ function turn_right {
 }
 
 input=$(tr ' ' '-' < $1)
-for input_line in $input ; do
+for input_line in $input; do
   command=$(echo $input_line | sed -E 's/(.*)-(.*)/\1/')
   case $command in
     "REPORT")
