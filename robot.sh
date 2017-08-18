@@ -44,11 +44,37 @@ function move_robot {
 }
 
 function turn_left {
-  true
+  case $f in
+    "NORTH")
+      f="WEST"
+    ;;
+    "SOUTH")
+      f="EAST"
+    ;;
+    "EAST")
+      f="NORTH"
+    ;;
+    "WEST")
+      f="SOUTH"
+    ;;
+  esac
 }
 
 function turn_right {
-  true
+  case $f in
+    "NORTH")
+      f="EAST"
+    ;;
+    "SOUTH")
+      f="WEST"
+    ;;
+    "EAST")
+      f="SOUTH"
+    ;;
+    "WEST")
+      f="NORTH"
+    ;;
+  esac
 }
 
 input=$(tr ' ' '-' < $1)
