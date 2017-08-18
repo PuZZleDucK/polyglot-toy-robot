@@ -1,18 +1,23 @@
 Toy Robot Solution
 ==================
 
-Process
--------
+# My Toy Robot
+- To run a toy script: ```./robot <input-file.toy>```
+- To all tests: ```./test```
+- Solution provided in Bash
+- Tests provided by Bash
+- This is a seriously hard problem to take seriously... It's the new fizz buzz!
+- The examples seem devoid of any useful information
+- I have included below the checklists I created to work with
+
+# Process
 - [x] Extract requirements/checklists/docs/tests/etc
 - [x] Expand tests to cover suitable minimal cases
 - [x] Framework/Pipeline
-- [ ] Make tests pass
-- [ ] Cleanup
+- [x] Make tests pass
+- [x] Cleanup
 
-
-Description
------------
-
+# Checklist
 - [x] The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.
 - [x] There are no other obstructions on the table surface.
 - [x] The robot is free to roam around the surface of the table, but must be prevented from falling to destruction.
@@ -41,12 +46,5 @@ Description
   - [x] add ignore MOVE, LEFT, RIGHT and REPORT before PLACE test
   - [x] handle multiple REPORTs?
   - [x] duplicate PLACE command
-- [ ] Please engineer your solution to a standard you consider suitable for production
-- [ ] Please provide your source code
-
-
-# Bugbears
-- Hard line wraps in .md file
-- This is a seriously hard problem to take seriously
-- The examples seem devoid of any useful examples
-- How much should I care? What is 'safe' in this context?
+- [x] Please engineer your solution to a standard you consider suitable for production
+- [x] Please provide your source code

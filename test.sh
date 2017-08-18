@@ -4,7 +4,7 @@ set -o errexit
 export program_name="./robot.sh"
 test_files=$(ls data/)
 for file in data/*; do
-  if [[ $file == "data/"*"test"* ]]; then # limit to tests
+  if [[ $file == "data/"* ]]; then # limit to tests
     expected_output=$(tail -1 $file)
     if [[ $expected_output == "Expected output:" ]]; then # expect blank output
       expected_output=""
