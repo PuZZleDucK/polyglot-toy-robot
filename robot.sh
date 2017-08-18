@@ -5,21 +5,29 @@ if [ ! -f "$1" ]; then
 fi
 
 function place_robot {
-  echo $1
-  echo $2
-  echo $3
+  # echo $1
+  # echo $2
+  # echo $3
+  true
+  if (( $1 >= 0 && $1 < 5 )) ; then
+    if (( $1 >= 0 && $1 < 5 )) ; then
+      x=$1
+      y=$2
+      f=$3
+    fi
+  fi
 }
 
 function move_robot {
-  echo "move"
+  true
 }
 
 function turn_left {
-  echo "turn"
+  true
 }
 
 function turn_right {
-  echo "turn"
+  true
 }
 
 input=$(tr ' ' '-' < $1)

@@ -19,14 +19,13 @@ Description
 - [ ] Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
 - [ ] commands of the following (textual) form:
-- [ ] PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
-- [ ] The origin (0,0) can be considered to be the SOUTH WEST most corner.
+- [x] PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
+- [x] The origin (0,0) can be considered to be the SOUTH WEST most corner.
 - [ ] The first valid command to the robot is a PLACE command, after that, any sequence of commands may be issued, in any order, including another PLACE command
-- [ ] The application should discard all commands in the sequence until
-  a valid PLACE command has been executed.
+- [ ] The application should discard all commands in the sequence until a valid PLACE command has been executed.
 - [ ] MOVE will move the toy robot one unit forward in the direction it is currently facing.
 - [ ] LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.
-- [ ] REPORT will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
+- [x] REPORT will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
 
 - [ ] A robot that is not on the table will ignore the MOVE, LEFT, RIGHT and REPORT commands.
 - [x] Input will be from a file.
@@ -39,15 +38,14 @@ Description
 
 - [ ] Please provide your source code
 - [x] any test code/data you using
+  - [ ] add 360 test
+  - [ ] add ignore MOVE, LEFT, RIGHT and REPORT before PLACE test
+  - [ ] handle multiple REPORTs?
 - [ ] Please engineer your solution to a standard you consider suitable for production
 
 
-Bugbears
---------
+# Bugbears
 - Hard line wraps in .md file
-- Heavy .md style
 - This is a seriously hard problem to take seriously
 - The examples seem devoid of any useful examples
-- Behaviour of many commands and state of robot before valid PLACE is unspecified
 - How much should I care? What is 'safe' in this context?
-- Should I bother to handle multiple REPORTs? Examples don't clarify!
