@@ -20,7 +20,7 @@ function place_robot {
 
 function report {
   if [[ $f ]]; then
-    echo "$x,$y,$f"
+    echo -n "$x,$y,$f"
   fi
 }
 function move_robot {
