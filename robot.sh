@@ -19,7 +19,28 @@ function place_robot {
 }
 
 function move_robot {
-  true
+  case $f in
+    "NORTH")
+      if (( $y < 5 )) ; then
+        y=$((y + 1))
+      fi
+    ;;
+    "SOUTH")
+      if (( $y > 1 )) ; then
+        y=$((y - 1))
+      fi
+    ;;
+    "EAST")
+      if (( $x < 5 )) ; then
+        x=$((x + 1))
+      fi
+    ;;
+    "WEST")
+      if (( $x > 1 )) ; then
+        x=$((x - 1))
+      fi
+    ;;
+  esac
 }
 
 function turn_left {
