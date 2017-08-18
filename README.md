@@ -3,8 +3,8 @@ Toy Robot Solution
 
 Process
 -------
-- [ ] Extract requirements/checklists/docs/tests/etc
-- [ ] Expand tests to cover suitable cases
+- [x] Extract requirements/checklists/docs/tests/etc
+- [x] Expand tests to cover suitable minimal cases
 - [ ] Framework/Pipeline
 - [ ] Make tests pass
 - [ ] Cleanup
@@ -29,8 +29,8 @@ Description
 - [ ] REPORT will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
 
 - [ ] A robot that is not on the table will ignore the MOVE, LEFT, RIGHT and REPORT commands.
-- [ ] Input will be from a file.
-- [ ] Provide test data to exercise the application.
+- [x] Input will be from a file.
+- [x] Provide test data to exercise the application.
 - [ ] The application must be a command line application.
 
 - [ ] The toy robot must not fall off the table during movement
@@ -38,7 +38,7 @@ Description
 - [ ] Any move that would cause the robot to fall must be ignored.
 
 - [ ] Please provide your source code
-- [ ] any test code/data you using
+- [x] any test code/data you using
 - [ ] Please engineer your solution to a standard you consider suitable for
 production
 
@@ -49,3 +49,6 @@ Bugbears
 - Heavy .md style
 - This is a seriously hard problem to take seriously
 - The examples seem devoid of any useful examples
+- Behaviour of many commands and state of robot before valid PLACE is unspecified
+- How much should I care? What is 'safe' in this context?
+- Should I bother to handle multiple REPORTs? Examples don't clarify!
