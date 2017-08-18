@@ -8,7 +8,8 @@ Toy Robot Solution
 - Tests provided by Bash
 - This is a seriously hard problem to take seriously... It's the new fizz buzz!
 - The examples seem devoid of any useful information
-- I have included below the checklists I created to work with
+- I have included below the checklists I created to work with... usually I would remove when complete
+- I would normally include repository and CI links here but they contain identifiers (included in email)
 
 # Process
 - [x] Extract requirements/checklists/docs/tests/etc
