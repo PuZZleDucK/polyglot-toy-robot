@@ -18,6 +18,11 @@ function place_robot {
   fi
 }
 
+function report {
+  if [[ $f ]]; then
+    echo "$x,$y,$f"
+  fi
+}
 function move_robot {
   case $f in
     "NORTH")
@@ -82,13 +87,12 @@ for input_line in $input ; do
   command=$(echo $input_line | sed -E 's/(.*)-(.*)/\1/')
   case $command in
     "REPORT")
-      echo "$x,$y,$f"
+      report
     ;;
     "PLACE")
       input_x=$(echo $input_line | sed -E 's/(.*)-(.*),(.*),(.*)/\2/')
       input_y=$(echo $input_line | sed -E 's/(.*)-(.*),(.*),(.*)/\3/')
       input_f=$(echo $input_line | sed -E 's/(.*)-(.*),(.*),(.*)/\4/')
-      # echo "PLACE INPUTS $input_x,$input_y,$input_f"
       place_robot $input_x $input_y $input_f
     ;;
     "MOVE")
