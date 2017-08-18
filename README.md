@@ -5,7 +5,7 @@ Process
 -------
 - [x] Extract requirements/checklists/docs/tests/etc
 - [x] Expand tests to cover suitable minimal cases
-- [ ] Framework/Pipeline
+- [x] Framework/Pipeline
 - [ ] Make tests pass
 - [ ] Cleanup
 
@@ -31,7 +31,7 @@ Description
 - [ ] A robot that is not on the table will ignore the MOVE, LEFT, RIGHT and REPORT commands.
 - [x] Input will be from a file.
 - [x] Provide test data to exercise the application.
-- [ ] The application must be a command line application.
+- [x] The application must be a command line application.
 
 - [ ] The toy robot must not fall off the table during movement
 - [ ] This also includes the initial placement of the toy robot.
@@ -39,8 +39,7 @@ Description
 
 - [ ] Please provide your source code
 - [x] any test code/data you using
-- [ ] Please engineer your solution to a standard you consider suitable for
-production
+- [ ] Please engineer your solution to a standard you consider suitable for production
 
 
 Bugbears
