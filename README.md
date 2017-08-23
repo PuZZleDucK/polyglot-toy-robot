@@ -9,7 +9,8 @@ Toy Robot Solution
 - This is a seriously hard problem to take seriously... It's the new fizz buzz!
 - The examples seem devoid of any useful information
 - I have included below the checklists I created to work with... usually I would remove when complete
-- I would normally include repository and CI links here but they contain identifiers (included in email)
+- Source code avaliable at: https://github.com/PuZZleDucK/bash-toy-robot
+- CI status: [![Build Status](https://semaphoreci.com/api/v1/puzzleduck/bash-toy-robot/branches/master/badge.svg)](https://semaphoreci.com/puzzleduck/bash-toy-robot)
 
 # Process
 - [x] Extract requirements/checklists/docs/tests/etc
