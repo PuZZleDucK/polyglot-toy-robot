@@ -1,6 +1,4 @@
 class Robot < ApplicationRecord
-  def self.from_file file
-  end
 
   def self.from_text text
     input, sep, output = text.partition(/expected\ output:/i)

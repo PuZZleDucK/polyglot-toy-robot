@@ -93,8 +93,16 @@ class ToyController < ApplicationController
   end
 
   def self.evaluate_file file
-    robot = Robot.from_file(file)
-    evaluate robot
+    # puts "FILE #{file}"
+    # puts "FILE DATA #{Pathname(file).read}"
+    robot = Robot.from_text(Pathname(file).read)
+    output = evaluate robot
+    puts "Expected Output:"
+    puts "================"
+    puts "#{robot.expected_output}"
+    puts "\nProgram Output:"
+    puts "========="
+    puts "#{output}"
   end
 
 end

@@ -18,26 +18,26 @@
   - ```bundle install```
   - ```./bin/rails db:migrate```
 - To run a toy script:
-  - ```./bin/rails runner "ToyController.evaluate_file" test/fixtures/files/<test-script>.toy```
+  - ```./bin/rails runner "ToyController.evaluate_file 'test/fixtures/files/<test-script>.toy'"```
 - To all tests:
   - ```./bin/rails test```
 
-## Java Toy Robot
+## Java Toy Robot - TODO
 - To compile toy robot:
   - ```javac ./lib/java/robot.java <input-file.toy>```
   - Maven/Grunt?
 - To run a script: ```java ./lib/java/robot```
 - To run tests: ```java ./lib/java/test```
 
-## Python Toy Robot
+## Python Toy Robot - TODO
 - To run a toy script: ```./lib/python/robot.py <input-file.toy>```
 - To all tests: ```./lib/python/test.py```
 
-## Haskell Toy Robot
+## Haskell Toy Robot - TODO
 - To run a toy script: ```runhaskell ./lib/haskell/robot.hs <input-file.toy>```
 - To all tests: ```runhaskell ./lib/haskell/test.sh```
 
-## ??? Toy Robot
+## ??? Toy Robot - TODO
 - To run a toy script: ```./lib/???/robot.?? <input-file.toy>```
 - To all tests: ```./lib/???/test.??```
 
@@ -66,12 +66,12 @@
 - [x] The application should discard _all_ commands in the sequence until a valid PLACE command has been executed.
 - [x] MOVE will move the toy robot one unit forward in the direction it is currently facing.
 - [x] LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.
-- [ ] REPORT will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
+- [x] REPORT will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
 
 - [x] A robot that is not on the table will ignore the MOVE, LEFT, RIGHT and REPORT commands.
 - [x] Input will be from a file.
 - [x] Provide test data to exercise the application.
-- [ ] The application must be a command line application.
+- [x] The application must be a command line application.
 
 - [x] must not fall off during initial placement of the toy robot.
 - [x] Any move that would cause the robot to fall must be ignored.
