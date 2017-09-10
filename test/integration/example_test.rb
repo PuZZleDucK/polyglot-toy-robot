@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RobotTest < ActionDispatch::IntegrationTest
+class ExampleTest < ActionDispatch::IntegrationTest
 
   test "example scripts" do
     test_paths = []
