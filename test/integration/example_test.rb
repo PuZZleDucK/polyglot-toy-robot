@@ -10,11 +10,9 @@ class ExampleTest < ActionDispatch::IntegrationTest
       end
     end
     test_paths.each do |path|
-      file_data = file_fixture(path).read
-      # robot = Robot.create(file_data) # create Robot Data object
-      # result = ToyController.evaluate(robot) # run an evaluation
-      # assert_match result robot.expected_output
-      assert true # Disabled until simpler tests pass
+      robot = Robot.from_text(file_fixture(path).read) # create Robot Data object
+      eval_result = ToyController.evaluate(robot) # run an evaluation
+      assert_match robot.expected_output, eval_result
     end
   end
 

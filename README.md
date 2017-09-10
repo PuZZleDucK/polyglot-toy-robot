@@ -49,38 +49,37 @@
 - [x] CI Pipeline
 - [x] Make tests fail
 - [x] Generate rails model and controller
-- [ ] Make tests pass
+- [x] Make tests pass
 - [ ] Cleanup and repeat
 
 # Checklist
-- [ ] square tabletop, of dimensions 5 units x 5 units.
-- [ ] There are no other obstructions on the table surface.
-- [ ] The robot is free to roam, but must be prevented from falling to destruction.
-- [ ] Any movement that would result in the robot falling from the table must be prevented
-- [ ] however further valid movement commands must still be allowed.
+- [x] square tabletop, of dimensions 5 units x 5 units (referenced as locations 0 to 4).
+- [x] There are no other obstructions on the table surface.
+- [x] The robot is free to roam, but must be prevented from falling to destruction.
+- [x] Any movement that would result in the robot falling from the table must be prevented
+- [x] however further valid movement commands must still be allowed.
 
-- [ ] commands of the following (textual) form:
-- [ ] PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
-- [ ] The origin (0,0) can be considered to be the SOUTH WEST most corner.
-- [ ] The first valid command to the robot is a PLACE command, after that, any sequence of commands may be issued, in any order, including another PLACE command
-- [ ] The application should discard _all_ commands in the sequence until a valid PLACE command has been executed.
-- [ ] MOVE will move the toy robot one unit forward in the direction it is currently facing.
-- [ ] LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.
+- [x] commands of the following (textual) form:
+- [X] PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
+- [x] The origin (0,0) can be considered to be the SOUTH WEST most corner.
+- [x] The first valid command to the robot is a PLACE command, after that, any sequence of commands may be issued, in any order, including another PLACE command
+- [x] The application should discard _all_ commands in the sequence until a valid PLACE command has been executed.
+- [x] MOVE will move the toy robot one unit forward in the direction it is currently facing.
+- [x] LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.
 - [ ] REPORT will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
 
-- [ ] A robot that is not on the table will ignore the MOVE, LEFT, RIGHT and REPORT commands.
-- [ ] Input will be from a file.
+- [x] A robot that is not on the table will ignore the MOVE, LEFT, RIGHT and REPORT commands.
+- [x] Input will be from a file.
 - [x] Provide test data to exercise the application.
 - [ ] The application must be a command line application.
 
-- [ ] The toy robot must not fall off the table during movement
-- [ ] This also includes the initial placement of the toy robot.
-- [ ] Any move that would cause the robot to fall must be ignored.
+- [x] must not fall off during initial placement of the toy robot.
+- [x] Any move that would cause the robot to fall must be ignored.
 
 - [x] any test code/data you using
-  - [ ] handle multiple REPORTs?
-  - [ ] duplicate PLACE command
-- [ ] Please engineer your solution to a standard you consider suitable for production
+  - [x] handle multiple REPORTs?
+  - [x] duplicate PLACE command
+- [x] Please engineer your solution to a standard you consider suitable for production
 - [x] Please provide your source code
 
 

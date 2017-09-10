@@ -11,14 +11,17 @@ class ToyController < ApplicationController
       when "PLACE"
         x, y, facing = place(script_line.split[1])
       when "MOVE"
-        move()
-        puts "----MOVE"
+        if facing != "" then
+          x, y = move(x, y, facing)
+        end
       when "LEFT"
-        left()
-        puts "----LEFT"
+        if facing != "" then
+          facing = left(facing)
+        end
       when "RIGHT"
-        right()
-        puts "----RIGHT"
+        if facing != "" then
+          facing = right(facing)
+        end
       when "REPORT"
         if facing != "" then
           output += "#{x},#{y},#{facing}"
@@ -39,13 +42,54 @@ class ToyController < ApplicationController
     end
   end
 
-  def self.move
+  def self.move x, y, facing
+    case facing
+    when "NORTH"
+      if y < 4 then
+        y += 1
+      end
+    when "SOUTH"
+      if y >= 1 then
+        y -= 1
+      end
+    when "WEST"
+      if x >= 1 then
+        x -= 1
+      end
+    when "EAST"
+      if x < 4 then
+        x += 1
+      end
+    end
+    return x, y
   end
 
-  def self.left
+  def self.left facing
+    case facing
+    when "NORTH"
+      facing = "WEST"
+    when "SOUTH"
+      facing = "EAST"
+    when "WEST"
+      facing = "SOUTH"
+    when "EAST"
+      facing = "NORTH"
+    end
+    facing
   end
 
-  def self.right
+  def self.right facing
+    case facing
+    when "NORTH"
+      facing = "EAST"
+    when "SOUTH"
+      facing = "WEST"
+    when "WEST"
+      facing = "NORTH"
+    when "EAST"
+      facing = "SOUTH"
+    end
+    facing
   end
 
   def self.evaluate_file file
