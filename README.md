@@ -18,7 +18,7 @@
   - ```bundle install```
   - ```./bin/rails db:migrate```
 - To run a toy script:
-  - ```./bin/rails runner "ToyController.run_function" test/fixtures/files/<test-script>.toy```
+  - ```./bin/rails runner "ToyController.evaluate_file" test/fixtures/files/<test-script>.toy```
 - To all tests:
   - ```./bin/rails test```
 
