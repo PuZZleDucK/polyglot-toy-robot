@@ -6,17 +6,26 @@
 - The current additional targets are: Java, Python, Haskell an Shell Script
 - I want to demonstrate a good testing methodology and CI/CD pipeline
 - Please note that clicking the following links may reveal the authors identity or username:
-  - Source code is available here:
-  - CI/CD reporting is available here:
-  - CI Status:
+  - Source code is available here: https://goo.gl/vzAuH7
+  - CI/CD reporting is available here: https://goo.gl/hCQte5
+  - CI Status: [![Build Status](https://goo.gl/jX5s68)](https://goo.gl/hCQte5)
 - I have included below the checklists I created to work with... usually I would remove when complete
 
 ## Rails Toy Robot
-- To run a toy script: ```./bin/rake task-name toy-script```
-- To all tests: ```./bin/rails test```
+- To install run:
+  - ```git clone <url>```
+  - ``` cd polyglot-toy-robot```
+  - ```bundle install```
+  - ```./bin/rails db:migrate```
+- To run a toy script:
+  - ```./bin/rails runner "ToyController.run_function" test/fixtures/files/<test-script>.toy```
+- To all tests:
+  - ```./bin/rails test```
 
 ## Java Toy Robot
-- To compile toy robot: ```javac ./lib/java/robot.java <input-file.toy>```
+- To compile toy robot:
+  - ```javac ./lib/java/robot.java <input-file.toy>```
+  - Maven/Grunt?
 - To run a script: ```java ./lib/java/robot```
 - To run tests: ```java ./lib/java/test```
 
@@ -37,7 +46,8 @@
 - [x] Expand tests to cover suitable minimal and extended cases
 - [x] Rails framework
 - [x] Test framework (minitest)
-- [ ] CI Pipeline
+- [x] CI Pipeline
+- [x] Make tests fail
 - [ ] Make tests pass
 - [ ] Cleanup and repeat
 
@@ -74,4 +84,6 @@
 
 
 ## Notes to self:
-- Use URL shortener to preserve anonymity for CI/CD link
+- [x] Use URL shortener to preserve anonymity for CI/CD link
+- [ ] Data scripts in a model... script_data and expected_output
+- [ ] Evaluation in controller
