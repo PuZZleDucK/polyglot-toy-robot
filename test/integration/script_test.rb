@@ -10,9 +10,12 @@ class ScriptTest < ActionDispatch::IntegrationTest
       end
     end
     test_paths.each do |path|
+      puts "Test: #{path}"
       robot = Robot.from_text(file_fixture(path).read) # create Robot Data object
       eval_result = ToyController.evaluate(robot) # run an evaluation
-      assert_match eval_result, robot.expected_output
+      puts " EVAL: #{eval_result}"
+      puts " EXPECT: #{robot.expected_output}"
+      assert_match robot.expected_output, eval_result
     end
   end
 

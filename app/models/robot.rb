@@ -1,11 +1,10 @@
 class Robot < ApplicationRecord
-
   def self.from_file file
-
   end
 
   def self.from_text text
-    robot = Robot.create(input_script: "", expected_output: "")
+    input, sep, output = text.partition(/expected\ output:/i)
+    robot = Robot.create(input_script: input.strip, expected_output: output.strip)
   end
 
 end
