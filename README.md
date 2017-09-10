@@ -48,6 +48,7 @@
 - [x] Test framework (minitest)
 - [x] CI Pipeline
 - [x] Make tests fail
+- [x] Generate rails model and controller
 - [ ] Make tests pass
 - [ ] Cleanup and repeat
 
@@ -85,5 +86,5 @@
 
 ## Notes to self:
 - [x] Use URL shortener to preserve anonymity for CI/CD link
-- [ ] Data scripts in a model... script_data and expected_output
-- [ ] Evaluation in controller
+- [x] Data scripts in a model... input_script and expected_output
+- [x] Evaluation in controller
