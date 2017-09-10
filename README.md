@@ -36,6 +36,7 @@
 - [x] Extract requirements/checklists/docs/tests/etc
 - [x] Expand tests to cover suitable minimal and extended cases
 - [x] Rails framework
+- [x] Test framework (minitest)
 - [ ] CI Pipeline
 - [ ] Make tests pass
 - [ ] Cleanup and repeat
