@@ -23,8 +23,13 @@
   - ```./bin/rails test```
 
 ## Bash Toy Robot
-  - To run a toy script: ```./lib/bash/robot.sh test/fixtures/files/<input-file>.toy```
-  - To all tests: ```./test/integration/test-bash.sh```
+- To run a toy script: ```./lib/bash/robot.sh test/fixtures/files/<input-file>.toy```
+- To all tests: ```./test/integration/test-bash.sh```
+
+## Python Toy Robot - TODO
+- To run a toy script: ```./lib/python/robot.py <input-file.toy>```
+- To all tests: ```./test/python/unit_tests.py```
+
 
 ## Java Toy Robot - TODO
 - To compile toy robot:
@@ -32,10 +37,6 @@
   - Maven/Grunt?
 - To run a script: ```java ./lib/java/robot```
 - To run tests: ```java ./lib/java/test```
-
-## Python Toy Robot - TODO
-- To run a toy script: ```./lib/python/robot.py <input-file.toy>```
-- To all tests: ```./lib/python/test.py```
 
 ## Haskell Toy Robot - TODO
 - To run a toy script: ```runhaskell ./lib/haskell/robot.hs <input-file.toy>```
