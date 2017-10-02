@@ -1,5 +1,6 @@
 #!/bin/bash
 set -o errexit
+set -e
 
 program_name="./lib/bash/robot.sh"
 test_folder="test/fixtures/files/"
@@ -16,5 +17,6 @@ for file in $test_files; do
     echo -e "$file - \e[31mFAIL\e[0m"
     echo -e "    expected_output: $expected_output"
     echo -e "    output: $output"
+    exit 999
   fi
 done

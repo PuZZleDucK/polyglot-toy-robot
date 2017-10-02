@@ -33,7 +33,7 @@ function move_robot {
       fi
     ;;
     "EAST")
-      if (( $x < 4 )); then
+      if (( $x < 5 )); then
         x=$((x + 1))
       fi
     ;;
