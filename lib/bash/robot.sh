@@ -23,7 +23,7 @@ function report {
 function move_robot {
   case $f in
     "NORTH")
-      if (( $y < 5 )); then
+      if (( $y < 4 )); then
         y=$((y + 1))
       fi
     ;;
@@ -33,7 +33,7 @@ function move_robot {
       fi
     ;;
     "EAST")
-      if (( $x < 5 )); then
+      if (( $x < 4 )); then
         x=$((x + 1))
       fi
     ;;
