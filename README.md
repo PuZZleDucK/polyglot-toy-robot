@@ -22,6 +22,10 @@
 - To all tests:
   - ```./bin/rails test```
 
+## Bash Toy Robot
+  - To run a toy script: ```./lib/bash/robot.sh test/fixtures/files/<input-file>.toy```
+  - To all tests: ```./test/integration/test-bash.sh```
+
 ## Java Toy Robot - TODO
 - To compile toy robot:
   - ```javac ./lib/java/robot.java <input-file.toy>```
